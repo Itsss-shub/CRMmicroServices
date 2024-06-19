@@ -22,6 +22,7 @@ public class SanctionLetter{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer sanctionLetterId;
+	
     private Date sanctionDate;
     private String applicantName;
     private String contact;
