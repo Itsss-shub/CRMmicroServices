@@ -1,17 +1,17 @@
 package com.bank.homeloan.restapi.app.model;
 
 import java.util.Date;
-import java.util.List;
+
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.Pattern;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -72,9 +72,6 @@ public class CustomerDetails {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private Ledger ledger;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-	private LoanDisbursement loanDisbursement;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private LocalAddress localAddress;
