@@ -29,9 +29,6 @@ public class CustomerServiceImpl implements CustomerServiceI{
 		
 		
 		cd.setStatus("pending");
-		Integer x=cd.getCustomerDetailsId();
-				
-		cd.getLedger().setCustId(x);
 		
 		String sub = "Loan Application Submission - Apna Finance Corp Ltd";
 				 String msg = "Dear "+ cd.getCustomerName()+",\n\n" +
